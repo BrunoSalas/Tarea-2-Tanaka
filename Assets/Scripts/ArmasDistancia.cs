@@ -2,17 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArmasDistancia : MonoBehaviour
+namespace weapons
 {
-    // Start is called before the first frame update
-    void Start()
+    abstract class ArmasDistancia : Armas
     {
-        
-    }
+        public float velocityAttack;
+        public float price;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public abstract float CalculateDamage();
     }
 }
