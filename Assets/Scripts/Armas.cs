@@ -4,8 +4,15 @@ using UnityEngine;
 
 namespace weapons
 {
-    public class Armas
+    abstract class Armas
     {
-        public string nombre;
+
+        public string name;
+        public float damage;
+        public string GetName()
+        {
+            return name;
+        }
     }
+    
 }

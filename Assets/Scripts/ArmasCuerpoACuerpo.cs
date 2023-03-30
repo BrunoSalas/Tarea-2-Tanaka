@@ -1,18 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class ArmasCuerpoACuerpo : MonoBehaviour
+namespace weapons
 {
-    // Start is called before the first frame update
-    void Start()
+    abstract class ArmasCuerpoACuerpo : Armas
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public float velocityAttack;
+        public float price;
     }
 }
