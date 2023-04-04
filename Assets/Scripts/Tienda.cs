@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 namespace weapons
 {
     class Tienda : MonoBehaviour
@@ -64,6 +65,10 @@ namespace weapons
                 inventory.RemoveAt(j - 1);
                 List();
             }
+        }
+        public void DesPlay()
+        {
+            EditorApplication.isPlaying = false;
         }
     }
 }
